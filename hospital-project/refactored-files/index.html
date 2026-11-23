@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="City Care Hospital: view services, meet our doctors and book an appointment online.">
+  <title>City Care Hospital | Book an Appointment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <p class="logo">City Care Hospital</p>
+    <nav aria-label="Main menu">
+      <a href="#services">Services</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#book">Book Appointment</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <h1>Quality healthcare for your whole family</h1>
+
+    <section id="services" aria-labelledby="services-heading">
+      <h2 id="services-heading">Our Services</h2>
+      <article>
+        <h3>General Medicine</h3>
+        <p>Check-ups, fever, infections and daily health problems.</p>
+      </article>
+      <article>
+        <h3>Cardiology</h3>
+        <p>Heart tests, ECG and treatment for heart conditions.</p>
+      </article>
+      <article>
+        <h3>Paediatrics</h3>
+        <p>Child care, vaccinations and growth checks.</p>
+      </article>
+    </section>
+
+    <section id="doctors" aria-labelledby="doctors-heading">
+      <h2 id="doctors-heading">Our Doctors</h2>
+      <article>
+        <h3>Dr. Anita Rao</h3>
+        <p>General Physician, 12 years of experience.</p>
+      </article>
+      <article>
+        <h3>Dr. Suresh Kumar</h3>
+        <p>Cardiologist, 15 years of experience.</p>
+      </article>
+      <article>
+        <h3>Dr. Meena Reddy</h3>
+        <p>Paediatrician, 9 years of experience.</p>
+      </article>
+    </section>
+
+    <section id="book" aria-labelledby="book-heading">
+      <h2 id="book-heading">Book an Appointment</h2>
+      <p>Fields marked * are required.</p>
+
+      <form action="#" method="post">
+
+        <p>
+          <label for="patient-name">Patient name *</label><br>
+          <input type="text" id="patient-name" name="patientName" autocomplete="name" required minlength="3">
+        </p>
+
+        <p>
+          <label for="phone">Phone number *</label><br>
+          <input type="tel" id="phone" name="phone" autocomplete="tel" pattern="[0-9]{10}" aria-describedby="phone-hint" required>
+          <small id="phone-hint">Enter 10 digits, for example 9876543210.</small>
+        </p>
+
+        <p>
+          <label for="email">Email *</label><br>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </p>
+
+        <p>
+          <label for="appt-date">Preferred date *</label><br>
+          <input type="date" id="appt-date" name="date" required>
+        </p>
+
+        <p>
+          <label for="department">Department *</label><br>
+          <select id="department" name="department" required>
+            <option value="">-- Choose department --</option>
+            <option value="general">General Medicine</option>
+            <option value="cardiology">Cardiology</option>
+            <option value="paediatrics">Paediatrics</option>
+          </select>
+        </p>
+
+        <fieldset>
+          <legend>Gender *</legend>
+          <input type="radio" id="g-male" name="gender" value="male" required>
+          <label for="g-male">Male</label>
+          <input type="radio" id="g-female" name="gender" value="female">
+          <label for="g-female">Female</label>
+          <input type="radio" id="g-other" name="gender" value="other">
+          <label for="g-other">Other</label>
+        </fieldset>
+
+        <p>
+          <label for="problem">Describe your problem (optional)</label><br>
+          <textarea id="problem" name="problem" rows="4"></textarea>
+        </p>
+
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+
+  </main>
+
+  <aside aria-labelledby="emergency-heading">
+    <h2 id="emergency-heading">Emergency</h2>
+    <p>Call 108 or visit our 24x7 emergency ward.</p>
+  </aside>
+
+  <footer>
+    <p>City Care Hospital, Vijayawada</p>
+    <p>&copy; 2026 City Care Hospital</p>
+  </footer>
+
+</body>
+</html>

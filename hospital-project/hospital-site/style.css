@@ -1,0 +1,16 @@
+body { font-family: Arial, sans-serif; background-color: #eaf6ff; margin: 0; color: #222; }
+.top { background-color: #4da6ff; padding: 15px 30px; }
+.logo { font-size: 26px; font-weight: bold; color: white; margin-bottom: 10px; }
+.menu a { color: #ddeeff; margin-right: 20px; }
+.page { padding: 20px 30px; }
+.big-title { font-size: 30px; font-weight: bold; margin-bottom: 20px; }
+.block { margin-bottom: 25px; }
+.block-title { font-size: 22px; font-weight: bold; color: #4da6ff; margin-bottom: 10px; }
+.box { background-color: white; padding: 10px 15px; margin-bottom: 10px; }
+.box-title { font-weight: bold; font-size: 18px; }
+.form { background-color: white; padding: 15px; max-width: 450px; }
+.input { margin-bottom: 12px; }
+.input input[type="text"], select, textarea { width: 100%; padding: 8px; }
+.btn { background-color: #4da6ff; color: white; padding: 10px; text-align: center; width: 120px; }
+.side { background-color: white; padding: 10px 15px; max-width: 450px; }
+.bottom { background-color: #4da6ff; color: white; text-align: center; padding: 10px; margin-top: 20px; }
